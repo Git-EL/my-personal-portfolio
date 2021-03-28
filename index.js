@@ -10,7 +10,7 @@ const mainRouter = require('./routes/main')
 const loginRouter = require('./routes/login')
 const jobsRouter = require('./routes/jobs')
 
-const adresse = process.env.DB || 'mongodb+srv://es-le-33:stray1234@cluster0.ppjeq.mongodb.net/PortfolioDB'
+const adresse = process.env.DB
 mongoose.connect(adresse, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
 
@@ -51,5 +51,5 @@ app.get('*', (req, res) => {
   res.render('nichtGefunden')
 })
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT
 app.listen(port, () => console.log(`Server läuft auf ${port}`))
