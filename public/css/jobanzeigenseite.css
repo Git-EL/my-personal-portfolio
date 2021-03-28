@@ -1,7 +1,7 @@
 .show-job-container {
   padding: 40px 45px;
   background-color: #ddf7fd;
-  min-height: 630px;
+  height: 100vh;
   width: 100%;
 }
 
