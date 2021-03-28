@@ -27,7 +27,7 @@ h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   color: #1A3E57;
-  font-size: 58px;
+  font-size: 65px;
   position: relative;
   text-align: center;
 }
@@ -39,7 +39,7 @@ span {
 p.intro-text {
   margin: 0 auto 0 auto;
   color: #1A3E57;
-  font-size: 23px;
+  font-size: 27px;
   text-align: center;
 }
 
@@ -186,11 +186,11 @@ p {
   position: absolute;
   content: " ";
   display: block;
-  right: -100px;
-  top: -200px;
+  right: -320px;
+  top: -190px;
   transform: rotate(35deg);
-  width: 70%;
-  height: 220%;
+  width: 100%;
+  height: 300%;
   background-color: #b1e1d6;
 }
 
