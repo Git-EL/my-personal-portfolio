@@ -1,0 +1,24 @@
+<form action="#" method="POST">
+    <h2>Job form</h2>
+    <input type="hidden" name='_csrf' value="{{csrfToken}}">
+    <label class="col-sm-2 col-form-label">Firma
+        <input type="text" name="firma" class="form-control-plaintext">
+    </label>
+    <label class="col-sm-2 col-form-label">Position
+        <input type="text" name="position" class="form-control-plaintext">
+    </label>
+    <label class="col-sm-2 col-form-label">Von
+        <input type="text" name="von" class="form-control-plaintext">
+    </label>
+    <label class="col-sm-2 col-form-label">Bis
+        <input type="text" name="bis" class="form-control-plaintext">
+    </label>
+    <label class="col-sm-2 col-form-label">
+        <textarea name="textfeld" rows="4" cols="50" placeholder=" Kurze Beschreibung der Tätigkeiten"
+            class="form-control-plaintext"></textarea>
+    </label>
+    <button type="submit" class="btn btn-info">Position eintragen</button>
+    <button type="reset" class="btn btn-info">zurücksetzen</button>
+</form>
+
+<link rel="stylesheet" href="/css/neueposition.css">

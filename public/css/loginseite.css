@@ -1,0 +1,39 @@
+.einloggen-container {
+  padding: 100px 45px 0;
+  background-color: #ddf7fd;
+  min-height: 630px;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #1A3E57;
+  margin-top: 15px;
+}
+
+.einloggen-box {
+  background-color: white;
+  border-radius: 5%;
+  max-width: 350px;
+  min-height: 280px;
+  margin: 40px auto;
+  padding: 20px 50px;
+  box-shadow: 0 0 8px #849ec9;
+}
+
+.einloggen-container input {
+  margin: 15px 0;
+}
+
+.einloggen-container button {
+  background-color: #849ec9;
+  border-color: #849ec9;
+  color: white;
+  width: 100%;
+}
+
+.einloggen-container button:hover {
+  background-color: #b46ba9;
+  border-color: #b46ba9;
+}

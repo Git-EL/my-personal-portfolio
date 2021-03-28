@@ -1,0 +1,13 @@
+<div class="posten">
+  <p>Your entry has been received</p>
+  <ul class="hello">
+    <li>Company:{{#if firma}} {{firma}} {{else}} unknown employer {{/if}}</li>
+    <li>Position: {{#if position}} {{position}} {{else}} not stated {{/if}} </li>
+    <li>From-to: {{von}} - {{#if bis}} {{bis}} {{else}} today {{/if}}</li>
+    <li style="white-space: pre-line">Description:
+      {{#if textfeld}} {{textfeld}} {{else}} not stated {{/if}}</li>
+  </ul>
+  <a href="jobs/anzeigen">See your job entries</a>
+</div>
+
+<link rel="stylesheet" href="/css/jobpostergebnis.css">

@@ -1,0 +1,13 @@
+.angemeldet {
+  padding: 40px 60px;
+  background-color: #ddf7fd;
+  min-height: 630px;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #1A3E57;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,39 @@
+<div class="anmelden">
+  <h2>Bitte anmelden</h2>
+
+{{#if fehler}}
+<p>Deine Eingaben sind fehlerhaft!</p>
+    <ul>
+        {{#each fehler}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+  <form action="anmelden" method="post">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div class="row mb-3">
+      <label for="inputUsename" class="col-sm-2 col-form-label" value="{{nutzername}}">Nutzername *</label>
+      <div class="col-sm-10">
+        <input type="text" name="nutzername" placeholder="Gib deinen Namen ein!" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputEmail" class="col-sm-2 col-form-label" value="{{email}}">Email *</label>
+      <div class="col-sm-10">
+        <input type="text" name="email" placeholder="Gib deine Email-Adresse ein!" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Passwort *</label>
+      <div class="col-sm-10">
+        <input type="text" name="passwort" placeholder="Gib dein Passwort ein!" required
+          placeholder="Dein Passwort bitte *" minlength="7" maxlength="20">
+      </div>
+    </div>
+    <button class="btn btn-primary">Anmelden</button>
+  </form>
+  <p class="pflicht">* : Pflichtfeld</p>
+</div>
+
+<link rel="stylesheet" href="/css/anmeldenseite.css">

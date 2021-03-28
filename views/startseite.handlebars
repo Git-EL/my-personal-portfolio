@@ -1,0 +1,63 @@
+<div class='start-container'>
+    <div class="intro">
+        <h1>HI. I AM <span>ESTHER</span></h1>
+        <p class="intro-text">A Fullstack Web Developer</p>
+        <div class="icon-box">
+            <a href='https://github.com/Git-EL' class='github-icon' target='_blank' rel="noreferrer"><i
+                    class="fab fa-github-alt"></i></a>
+            <a href='https://www.linkedin.com/in/esther-lee-627451205/' class='linkedin-icon' target='_blank'
+                rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href='https://www.xing.com/profile/Esther_Lee9/cv' class='xing-icon' target='_blank' rel="noreferrer"><i
+                    class="fab fa-xing"></i></a>
+        </div>
+    </div>
+    <img src="wolke-02.svg" alt="Wolken" class='wolke-oben'>
+    <img src="wolke-01.svg" alt="Wolken" class='wolke-mitte'>
+    <img src="Berge-Tag-01.svg" alt="Berge" class='berge-links'>
+    <img src="wolke-03.svg" alt="Wolken" class='wolke-unten'>
+    <img src="Berge-Tag-02.svg" alt="Berge" class='berge-rechts'>
+</div>
+<div id='about' class='about-container'>
+    <div class="about-box">
+        <h2>About me</h2>
+        <img src="portrait.svg" alt="Portrait" class='portrait'>
+        <p class='about-text'>
+            I am currently a student at the DCI - Digital Career Institute
+            and working towards a degree in Fullstack Web Development. I will graduate in June this year and am
+            interested in a job position as web developer to improve my skills and to meet new challenges.
+        </p>
+    </div>
+</div>
+<div id='skills' class='skills-container'>
+
+    <div class="skills-box">
+        <h2>My skills</h2>
+        <p> A quick overview of my technical skill sets</p>
+        <h3>Front End & Back End</h3>
+        <p class='skills-text'>
+            <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i
+                class="fab fa-react"></i> <i class="fab fa-node"></i> <img src="expressjs.svg" alt="express"
+                class='express-icon'>
+        </p>
+
+        <h3>Database & Version control & Additional skills</h3>
+        <p class='skills-text'>
+            <img src="mongoDB02.svg" alt="mongodb" class='mongodb-icon'> <i class="fab fa-git"></i> <img
+                src="adobephotoshop.svg" alt="adobeps" class='adobeps-icon'><img src="adobexd.svg" alt="adobexd"
+                class='adobexd-icon'>
+        </p>
+    </div>
+</div>
+<div id="contact" class="contact-container">
+    <div class="contact-box">
+        <h2>Get in touch</h2>
+        <p class="contact-text">If you would like to know more about me or have a job offer for front end, back end or
+            fullstack web development, please feel free to contact me.</p>
+        <button class="contact-button"><a href="mailto:lee_esther@live.com">Contact me</a></button>
+    </div>
+</div>
+<link rel="stylesheet" href="/css/startseite.css">
+
+{{#if fehler}}
+<p class="fehler">Something went wrong: {{fehler}}</p>
+{{/if}}

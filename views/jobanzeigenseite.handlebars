@@ -1,0 +1,24 @@
+<div class='show-job-container'>
+    <h2>My Career Path</h2>
+    <ul id="job">
+        {{#each jobs}}
+        <li id="{{_id}}" class="job-list-entry">
+            <ul class="job-input">
+                <li class="job-position">{{position}} at {{firma}}</li>
+                <li class="job-timespan"> from {{von}} to {{bis}}</li>
+                <li class="text-input" style="white-space: pre-line">{{textfeld}}</li>
+            </ul> <button class="delete-button"><i class="fas fa-trash-alt"></i> Delete job</button>
+        </li>
+        {{else}}
+        <li>No entries</li>
+        {{/each}}
+    </ul>
+    <a href="/jobs/anlegen" class="new-job"><i class="fas fa-plus"></i> Add a new job</a>
+</div>
+
+{{#if fehler}}
+<p class="fehler">Something has gone wrong: {{fehler}}</p>
+{{/if}}
+
+<link rel="stylesheet" href="/css/jobanzeigenseite.css">
+<script src="/delete.js"></script>

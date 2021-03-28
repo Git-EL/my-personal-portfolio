@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 20px 15px;
+  border-bottom: 1px solid #849ec9;
+  margin: auto;
+  width: 95%;
+}
+
+.navcontainer {
+  background-color: #ddf7fd;
+}
+
+ul>li {
+  padding-right: 10px;
+}
+
+.navbar>.container-fluid {
+  justify-content: space-between;
+}
+
+.nav-item a {
+  font-size: 17px;
+  margin: 7px 4px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #849ec9;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1a3e57;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #1a3e57;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler:focus {
+  color: white;
+  border-color: transparent;
+}
+
+.fa-dove {
+  color: #849ec9;
+  margin-right: 5px;
+}
+
+.login, .logout {
+  position: absolute;
+  right: 0;
+}
+
+.logout .btn-main {
+  background-color: #B46BA9;
+  border: 2px transparent;
+  border-radius: 5px;
+}
+
+.login .btn-main {
+  background-color: #b46ba9;
+  border: 2px #b46ba9 solid;
+  border-radius: 5px;
+}
+
+.login .btn, .logout .btn {
+  padding: 0 15px;
+  margin-top: 7px;
+}
+
+.login .btn-main:hover {
+  background-color: white;
+  border-color: #b46ba9;
+}
+
+.login .btn-main:hover a.nav-link {
+  color: #b46ba9;
+}
+
+.logout a.nav-link, .login a.nav-link {
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .logout .nav-link, .navbar-light .navbar-nav .login .nav-link {
+  color: white;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #b1e1d6;
+  width: 100%;
+  height: 60px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: absolute
+}
+
+.footer-container .github-icon, .footer-container .linkedin-icon, .footer-container .xing-icon {
+  color: #1a3e57;
+  margin: 0 0 0 20px;
+  font-size: 30px;
+  position: relative;
+  top: 15%;
+}
+
+.footer-container .github-icon:hover, .footer-container .linkedin-icon:hover, .footer-container .xing-icon:hover {
+  color: #b46ba9;
+  margin: 0 0 0 20px;
+}
+
+.footer-info {
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #1a3e57;
+}
+
+.footer-link:hover {
+  color: #b46ba9;
+}
+
+@media screen and (max-width: 991.5px) {
+  .login, .logout {
+    position: relative;
+  }
+  .login .btn-main {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 7px 0;
+    padding: 0;
+  }
+  .login .btn-main:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .navbar-light .navbar-nav .logout .nav-link:hover, .navbar-light .navbar-nav .login .nav-link:hover {
+    color: #1a3e57;
+  }
+  .navbar-light .navbar-nav .logout .nav-link, .navbar-light .navbar-nav .login .nav-link {
+    color: #b46ba9;
+  }
+  .logout .btn-main {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 7px 0;
+    padding: 0;
+  }
+  .logout .btn-main:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
