@@ -82,23 +82,23 @@ p.intro-text {
 .wolke-unten {
   position: absolute;
   right: 17%;
-  bottom: 15%;
+  bottom: 26%;
   z-index: 10;
   max-height: 190px
 }
 
 .berge-links {
   position: absolute;
-  max-width: 60%;
-  bottom: -5%;
+  width: 900px;
+  bottom: 0;
   left: -30px;
   z-index: 11;
 }
 
 .berge-rechts {
   position: absolute;
-  max-width: 60%;
-  bottom: -5%;
+  width: 700px;
+  bottom: 0;
   right: 0px;
   z-index: 11;
 }
@@ -276,30 +276,23 @@ p {
   .start-container {
     min-height: 650px;
   }
-  #wolke-oben {
-    width: 100%;
-    right: 4%;
-    top: 5%;
+  .wolke-oben {
+    left: 5%;
+    top: 15%;
     max-height: 190px
   }
-  #wolke-mitte {
-    width: 100%;
-    right: 4%;
-    top: 0;
-    max-height: 90px
-  }
-  #wolke-unten {
-    width: 100%;
-    right: 2%;
-    bottom: 45%;
+  .wolke-unten {
+    width: 90%;
+    right: 0%;
+    bottom: 26%;
   }
   .berge-links {
-    width: 100%;
+    max-width: 90%;
     left: 0;
     bottom: 0;
   }
   .berge-rechts {
-    width: 100%;
+    max-width: 90%;
     right: 0px;
     bottom: 0;
   }
